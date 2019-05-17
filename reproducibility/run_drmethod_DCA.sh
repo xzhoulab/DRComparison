@@ -14,7 +14,7 @@ bash
 let k=0
 
 for idata in 'Baron'; do
-for ((ip=2; ip<=102; ip=ip+10)); do
+for ip in 8 20 38 58; do
 for ((irpt=1; irpt<=5; irpt++)); do
   GFILE=../data/sce_full_${idata}_DCA.tsv
   OUTPATH=~/scRNAseqDRComparison/results/${idata}
