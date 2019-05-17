@@ -16,7 +16,7 @@ let k=0
 for idata in 'Baron'; do
 for ip in 8 20 38 58; do
 for ((irpt=1; irpt<=5; irpt++)); do
-  GFILE=../data/sce_full_${idata}_ZIFA.txt
+  GFILE=../data/sce_${idata}_ZIFA.txt
   CODEPATH=../algorithm/ZIFA
   let k=${k}+1
   if [ ${k} -eq ${SLURM_ARRAY_TASK_ID} ]; then
