@@ -12,10 +12,10 @@ irpt <- args[4]
 library(pryr) ## to count memory usage
 
 PCList <- list(
-c(4,10,20,28), #FreytagGold
+c(8, 20, 38, 58), #Baron
 )
 num_pc <- PCList[[data_indx]][ipc]
-DATASET <- c("FreytagGold")
+DATASET <- c("Baron")
 METHODS <- c("FA", "PCA", "ZINBWaVE", "pCMF", "DiffusionMap", "ICA", "NMF", "PoissonNMF")
 
 idata <- DATASET[data_indx]
