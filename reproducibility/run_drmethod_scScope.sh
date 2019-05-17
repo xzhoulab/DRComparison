@@ -14,9 +14,9 @@ bash
 let k=0
 
 for idata in 'Baron'; do
-for ((ip=2; ip<=200; ip=ip+10)); do
+for ip in 8 20 38 58; do
 for ((irpt=1; irpt<=5; irpt++)); do
-  GFILE=../data/sce_full/sce_full_${idata}_scScope.csv
+  GFILE=../data/sce_full_${idata}_scScope.csv
   CODEPATH=../algorithm
   let k=${k}+1
   if [ ${k} -eq ${SLURM_ARRAY_TASK_ID} ]; then
