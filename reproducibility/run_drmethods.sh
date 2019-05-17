@@ -13,7 +13,7 @@ bash
 
 let k=0
 
-for id in 5 11; do
+for id in 1; do
 for ((im=4; im<=4; im++)); do
 for ((ip=1; ip<=4; ip++)); do
 for ((irpt=1; irpt<=5; irpt++)); do
