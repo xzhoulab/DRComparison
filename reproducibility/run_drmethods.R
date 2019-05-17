@@ -34,7 +34,7 @@ if(!file.exists(paste0(res_path,"/",idata))){
 
 
 if(!file.exists(paste0(res_path,"/",idata,"/res.",idata,".nPC",num_pc,".rpt",irpt,".",imethod,".rds")) ){
-sce <- readRDS(paste0(data_path,"/sce_full_",idata,".rds") )
+sce <- readRDS(paste0(data_path,"/sce_",idata,".rds") )
 ## source method
 source(paste0(method_path,"/call_",imethod,".R") )
 source(paste0(param_path,"/params_settings.R") )
