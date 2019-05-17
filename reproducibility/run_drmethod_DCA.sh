@@ -4,7 +4,7 @@
 #SBATCH --job-name=dca
 #SBATCH --mem=10000
 #SBATCH --partition=nomosix
-#SBATCH --array=1-330
+#SBATCH --array=1-330%50
 #SBATCH --output=~/scRNAseqDRComparison/code/out/dca%a.out
 #SBATCH --error=~/scRNAseqDRComparison/code/err/dca%a.err
 #SBATCH --workdir=~/scRNAseqDRComparison/code
