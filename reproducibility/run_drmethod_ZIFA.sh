@@ -13,8 +13,8 @@ bash
 
 let k=0
 
-for idata in 'FreytagGold'; do
-for ip in 32 64 122 182; do
+for idata in 'Baron'; do
+for ip in 8 20 38 58; do
 for ((irpt=1; irpt<=5; irpt++)); do
   GFILE=../data/sce_full_${idata}_ZIFA.txt
   CODEPATH=../algorithm/ZIFA
