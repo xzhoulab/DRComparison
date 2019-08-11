@@ -1,4 +1,4 @@
-## MSD
+## MDS
 ## 2019-6-28 18:34:53
 
 ## loading packages
@@ -46,8 +46,8 @@ LSD <- function(x){
 	return(norm_counts)
 }#end func
 
-call_MSD <- function(sce, num_pc, params){
-	## other parameter in MSD method
+call_MDS <- function(sce, num_pc, params){
+	## other parameter in MDS method
 	filtering_method <- params$filtering_method
 	norm_method <- params$norm_method
 	## normalized counts
