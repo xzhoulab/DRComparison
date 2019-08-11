@@ -4,7 +4,7 @@
 #SBATCH --job-name=dr
 #SBATCH --mem=5000
 #SBATCH --partition=nomosix
-#SBATCH --array=1-260
+#SBATCH --array=1-260%100
 #SBATCH --output=~/scRNAseqDRComparison/code/out/dr%a.out
 #SBATCH --error=~/scRNAseqDRComparison/code/err/dr%a.err
 #SBATCH --workdir=~/scRNAseqDRComparison/code
