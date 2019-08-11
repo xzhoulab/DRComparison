@@ -8,13 +8,11 @@ params_settings <- function(method, num_clust=NULL){
 		params <- list(rotate = "oblimin", filtering_method="nonzeros", norm_method="log")
 	}else if(method=="PCA"){
 		params <- list(filtering_method="nonzeros", norm_method="log")
-	}else if(method=="SIMLR"){
-		params <- list(num_clust = num_clust, clust_range=c(2:20), filtering_method="nonzeros", norm_method="log")
 	}else if(method=="ZINBWaVE"){
 		params <- list(num_core=20, doParallel=TRUE, X=NULL, V=NULL, filtering_method="nonzeros")
-	}else if(method=="NMF"){
+	}else if(method=="PoissonNMF"){
 		params <- list(num_core=5, doParallel=TRUE, algorithm="lee", loss="mkl", filtering_method="nonzeros")
-	}else if(method=="nNMF"){
+	}else if(method=="NMF"){
 		params <- list(num_core=5, doParallel=TRUE, algorithm="lee", loss="mse", filtering_method="nonzeros", norm_method="log")
 	}else if(method=="pCMF"){
 		params <- list(num_core=20, doParallel=TRUE, filtering_method="nonzeros")
