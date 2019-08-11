@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --time=13-50:00:00
+#SBATCH --time=1-23:00:00
 #SBATCH --job-name=dr
 #SBATCH --mem=5000
 #SBATCH --partition=nomosix
