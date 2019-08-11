@@ -1,6 +1,6 @@
 ## run dimensionality reduction
 ## Modified by Shiquan Sun
-## Date: 2019-4-3 07:56:04
+## Date: 2019-8-3 07:56:04
 
 args <- as.numeric(commandArgs(TRUE))
 data_indx <- args[1]
@@ -16,7 +16,7 @@ c(8, 20, 38, 58), #Baron
 )
 num_pc <- PCList[[data_indx]][ipc]
 DATASET <- c("Baron")
-METHODS <- c("FA", "PCA", "ZINBWaVE", "pCMF", "DiffusionMap", "ICA", "NMF", "PoissonNMF")
+METHODS <- c("FA", "PCA", "ZINBWaVE", "pCMF", "DiffusionMap", "ICA", "NMF", "PoissonNMF", "MDS", "LLE", "Isomap", "LTSA")
 
 idata <- DATASET[data_indx]
 imethod <- METHODS[method_indx]
