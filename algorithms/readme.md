@@ -1,2 +1,2 @@
-## DR Methods except DCA, ZIFA, and scScope
-DCA, ZIFA, and scScope DR methods directly run with bash file, see details in reproducibility folder
+## DR Methods except DCA
+DCA DR method directly runs with bash file, see details in reproducibility folder
