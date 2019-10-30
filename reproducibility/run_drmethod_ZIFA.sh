@@ -22,7 +22,7 @@ for ((irpt=1; irpt<=5; irpt++)); do
   if [ ${k} -eq ${SLURM_ARRAY_TASK_ID} ]; then
   cd ${CODEPATH}
   if [ ! -d "~/scRNAseqDRComparison/results/${idata}/res.${idata}.nPC${ip}.rpt${irpt}.ZIFA.txt" ]; then
-  ~/anaconda2/bin/python block_ZIFA_commd.py --normcounts_file ${GFILE} --num_pc ${ip} --out ~/scRNAseqDRComparison/results/${idata}/res.${idata}.nPC${ip}.rpt${irpt}.ZIFA.txt
+  ~/anaconda2/bin/python call_ZIFA.py --normcounts_file ${GFILE} --num_pc ${ip} --out ~/scRNAseqDRComparison/results/${idata}/res.${idata}.nPC${ip}.rpt${irpt}.ZIFA.txt
   fi
   fi	
 done
